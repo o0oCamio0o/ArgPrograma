@@ -11,6 +11,7 @@ import { BannerComponent } from './componentes/banner/banner.component';
 import { ExperienciaComponent } from './componentes/experiencia/experiencia.component';
 import { EstudiosComponent } from './componentes/estudios/estudios.component';
 import { HabilidadesComponent } from './componentes/habilidades/habilidades.component';
+import { NgCircleProgressModule } from 'ng-circle-progress'; 
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { HabilidadesComponent } from './componentes/habilidades/habilidades.comp
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [],
   bootstrap: [AppComponent]
